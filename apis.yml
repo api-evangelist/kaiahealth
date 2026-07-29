@@ -1,9 +1,28 @@
 aid: kaiahealth
 name: kaiahealth
-description: kaiahealth is a company surfaced as a portfolio company of balderton-capital and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Kaia Health is a digital therapeutics company founded in 2016 (New York and Munich) that delivers
+  evidence-based, digital-first care for musculoskeletal (MSK) pain and respiratory conditions. Its
+  smartphone apps use AI and computer vision (motion tracking) plus in-house physical-therapy doctors
+  to guide members through clinically validated exercise and behavioral programs without appointments
+  or wearable devices. Products include Kaia MSK (joint and muscle care) and Kaia Breathe (respiratory /
+  COPD). The company sells to employers and health plans, claims 2,500+ enterprise clients and 3x ROI,
+  and is HIPAA, GDPR, HITRUST, SOC 2 Type II, ISO 27001, ISO 13485, and CE-certified. Kaia Health was
+  acquired by Sword Health in January 2026. It is backed by Balderton Capital. Kaia Health publishes no
+  public API; this profile captures its identity, security, and compliance posture.
 url: https://raw.githubusercontent.com/api-evangelist/kaiahealth/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/31281033?v=4
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Digital Therapeutics
+- Digital Health
+- Healthcare
+- Musculoskeletal
+- MSK
+- DTx
+- Physical Therapy
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +48,32 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/kaiahealth-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/kaiahealth-vulnerability-disclosure.yml
+- type: Security
+  url: https://kaiahealth.com/legal/security/
+- type: TrustCenter
+  url: security/kaiahealth-trust-center.yml
+- type: Conformance
+  url: conformance/kaiahealth-conformance.yml
+- type: Compliance
+  url: https://kaiahealth.com/legal/security/
 - type: Website
   url: https://www.kaiahealth.com/
+- type: GitHubOrganization
+  url: https://github.com/KaiaHealth
+- type: Blog
+  url: https://kaiahealth.com/blog/
+- type: Support
+  url: https://help.kaiahealth.com/
+- type: PrivacyPolicy
+  url: https://kaiahealth.com/legal/privacy-policy/
+- type: TermsOfService
+  url: https://kaiahealth.com/legal/terms-conditions/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
