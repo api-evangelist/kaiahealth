@@ -1,0 +1,48 @@
+edges:
+- partner_name: BfArM DiGA directory
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://diga.bfarm.de/de/verzeichnis/01330
+  category: DiGA (German prescription digital health app)
+  contract_reference:
+    register: BfArM DiGA directory (diga.bfarm.de, FHIR v3.0 bundles the public page loads)
+    standard: DiGA listing (SGB V s.139e, DiGAV)
+    spec_file: null
+    role: diga-manufacturer
+    registered_name: kaia health software GmbH
+    matched_domain: kaiahealth.de
+    matched_by: domain+verified
+    domain_source: hand-verified (LOCAL_VERIFIED)
+    detected_by: sweep-digital-therapeutics.py
+    detected: '2026-10-20'
+    verified_note: kaiahealth.de is the German site of Kaia Health (repo holds kaiahealth.com); the manufacturer
+      is Kaia's Munich entity (hand review 2026-10-20)
+    register_id: https://diga.bfarm.de/de/verzeichnis/01330
+    country: DE
+    certified_products:
+    - product: DiGA permanent listing
+      lapsed: false
+      apps:
+      - Kaia Rückenschmerzen - Rückentraining für Zuhause
+    - product: DiGA provisional listing
+      lapsed: true
+      apps:
+      - 'Kaia COPD: Meine aktive COPD Therapie'
+    signal_note: certified_products = one entry per listing TYPE (permanent / provisional), lapsed when every app
+      of that type is struck (gestrichen); apps are context, never counted
+  detected_by: sweep-digital-therapeutics.py
+  first_seen: '2026-10-20'
+generated: '2026-10-20'
+method: searched
+source:
+- https://diga.bfarm.de/de/verzeichnis
+- https://mhealthbelgium.be/apps
+- https://api.fda.gov/device/510k.json?search=product_code:PWE+product_code:QFT+product_code:QMY+product_code:QMZ+product_code:QQU+product_code:QRA+product_code:QVO+product_code:QWI+product_code:QXC+product_code:SAP+product_code:SBN+product_code:SCP+product_code:SEE&limit=100
+checked:
+- https://api.fda.gov/device/510k.json?search=product_code:PWE+product_code:QFT+product_code:QMY+product_code:QMZ+product_code:QQU+product_code:QRA+product_code:QVO+product_code:QWI+product_code:QXC+product_code:SAP+product_code:SBN+product_code:SCP+product_code:SEE&limit=100
+- https://diga.bfarm.de/de/verzeichnis
+- https://mhealthbelgium.be/apps
